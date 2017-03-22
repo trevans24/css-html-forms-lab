@@ -20,6 +20,29 @@
 
 	Every container, form, input, and button should have rounded corners.
 */
+#main {
+	width: 100%;
+}
+
+.form {
+	float: left;
+}
+
+.container-results {
+	float: left;
+}
+
+form {
+	border-radius: 2px;
+}
+
+input {
+	border-radius: 2px;
+}
+
+button {
+	border-radius: 2px;
+}
 
 /*-------- Form Styles --------*/
 
