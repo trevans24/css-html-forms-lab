@@ -3,6 +3,7 @@
 <head>
 	<title>CSS HTML Forms Lab</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700" rel="stylesheet">
 </head>
 <body>
 	<section id="main">
@@ -66,14 +67,14 @@
 						<div class="checkboxes">
 							<div class="check">
 							  <input id="check1" type="checkbox" name="adjective-2" value="powerful"> 
-							  <label for="check1">powerful</label>
+							  <label for="check1">powerful /label>
 							</div>
 							<div class="check">
-								<input id="check2" type="checkbox" name="adjective-2" value="honed">
+								<input id="check2" type="checkbox" name="adjective-2" value=" honed">
 								<label for="check2">honed</label> 
 							</div>
 							<div class="check">
-								<input id="check3" type="checkbox" name="adjective-2" value="dedicated"> 
+								<input id="check3" type="checkbox" name="adjective-2" value=" dedicated"> 
 								<label for="check3">dedicated</label>
 							</div>
 				    	</div>
@@ -116,8 +117,38 @@
 		$("form").on("submit", function(event){
 
 		    // Stop the form from submitting
-
+		    event.preventDefault();
 	    	// Append the new <section> created above.
+	    	makeResults();
+
+	    	var name = $('#name').val();
+	    	var sentence1 = "Once upon a time there was a Developer named " + name +".<br><br>";
+	    	$('.results').append(sentence1);
+
+	    	var verb1 = $('#verb-1').val();
+	    	var sentence2 = name + " came to General Assembly to " + verb1 + " the great mountain of programming knowledge.<br><br>";
+	    	$('.results').append(sentence2);
+
+	    	var mission = $('#mission').val();
+	    	var sentence3 = "'" + mission + "', " + name + " shouted.<br><br>";
+	    	$('.results').append(sentence3);
+
+	    	var sentiment = $('input[name="sentiment"]:checked').val();
+	    	var noun = $('#noun-1').val();
+	    	var sentence4 = "Though " + sentiment + ", " + name + " was able to overcome all obstacles with the power of their " + noun + ".<br><br>";
+	    	$('.results').append(sentence4);
+
+	    	var adjective2 = [];
+	    	var adjective = $('input[name="adjective-2"]:checked').map(function(){
+	    		adjective2.push($(this).val());
+	    	});
+	    	var noun2 = $('#noun-2').val();
+	    	var sentence5 = "In the end, their success can be contributed entirely to their " + adjective2 + " " + noun2 + " .";
+	    	$('.results').append(sentence5);	
+
+	    
+
+	    	//$('main').append(name + "/Mission/", + name + "shouted. </p>");
 
 	    	/*
 			
