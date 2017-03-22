@@ -3,6 +3,7 @@
 	box-sizing: border-box; 
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+	padding: 5px;
 }
 
 /* 
@@ -10,6 +11,11 @@
 
 	Make the Title twice as large as the body text, bold, and give it some nice margin.
 */
+h1 {
+	font-size: 2em;
+	font-weight: 800;
+	margin: 10px;
+}
 
 /*-------- Main Styles --------*/
 
@@ -29,7 +35,7 @@
 }
 
 .container-results {
-	float: left;
+	float: right;
 }
 
 form {
@@ -70,7 +76,7 @@ form {
 }
 
 .row {
-	margin: 10px;
+	margin: 5px;
 }
 
 .formGroup {
@@ -79,13 +85,12 @@ form {
 }
 
 .formGroup label {
-	width: 100%;
-	padding: 10px 0;
 	clear: both;
+	width: 100%;
+	padding: 5px 0;
 }
 
 .radioButtons {
-	clear: both;
 	margin-left: 10px;
 
 }
@@ -96,8 +101,7 @@ form {
 }
 
 .checkBoxes {
-	clear: both;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .checkBoxes label {
@@ -144,4 +148,11 @@ input[type = "submit"]:hover {
 	The results container should have a background color of #C8DBB3, and comfortable padding around the text.
 
 */
+
+.container-results {
+	width: 100%;
+	max-width: 500px;
+	background-color: #C8DBB3;
+	padding: 5px;
+}
 
