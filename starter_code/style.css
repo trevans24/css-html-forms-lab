@@ -15,6 +15,7 @@ h1 {
 	font-size: 2em;
 	font-weight: 800;
 	margin: 10px;
+	font-family: 'Proza Libre', sans-serif
 }
 
 /*-------- Main Styles --------*/
@@ -30,24 +31,32 @@ h1 {
 	width: 100%;
 }
 
-.form {
+.formSection {
 	float: left;
 }
 
-.container-results {
+.results {
 	float: right;
 }
 
+.container {
+	border-radius: 20px;
+}
+
 form {
-	border-radius: 2px;
+	border-radius: 20px;
 }
 
 input {
-	border-radius: 2px;
+	border-radius: 20px;
 }
 
 button {
-	border-radius: 2px;
+	border-radius: 20px;
+}
+
+#verb-1 {
+	border-radius: 20px;
 }
 
 /*-------- Form Styles --------*/
@@ -70,13 +79,18 @@ button {
 */
 
 form {
+	width: 100%;
 	max-width: 500px;
 	background-color: #E3E6EC;
-	align-content: center;
+	/*align-content: center;*/
 }
 
 .row {
-	margin: 5px;
+	margin: 1px;
+}
+
+.radioButtons {
+	padding: 10px 0;
 }
 
 .formGroup {
@@ -84,33 +98,50 @@ form {
 	display: inline-block;
 }
 
-.formGroup label {
+#name {
+	height: 48px;
+	clear: both;
+	width: 100%;
+	padding: 5px 0;
+} 
+
+#verb-1 {
 	clear: both;
 	width: 100%;
 	padding: 5px 0;
 }
 
-.radioButtons {
-	margin-left: 10px;
-
+#mission {
+	clear: both;
+	width: 100%;
+	padding: 5px 0;
 }
 
-.radioButtons label {
-	float: right;
-	vertical-align: sub;
+#noun-1 {
+	height: 48px;
+	clear: both;
+	width: 100%;
+	padding: 5px 0;
+}
+
+#noun-2 {
+	height: 48px;
+	clear: both;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.radio {
+	margin-left: 10px;
+	display: block;
+
 }
 
 .checkBoxes {
 	margin-left: 5px;
 }
 
-.checkBoxes label {
-	float: right;
-	vertical-align: sub;
-}
-
 input {
-	height: 48px;
 	padding: 14px;
 	border: 1px solid #CCC;
 	box-shadow: none;
@@ -149,7 +180,7 @@ input[type = "submit"]:hover {
 
 */
 
-.container-results {
+.results {
 	width: 100%;
 	max-width: 500px;
 	background-color: #C8DBB3;
