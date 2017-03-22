@@ -48,37 +48,92 @@ button {
 
 
 /* 
-
 	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
-	
 	The background should be #E3E6EC, and it should align to the middle of its container.
-	
 	Every element should have nice, even padding or margin around it.
-
 	.row elements should be spaced out so they're not touching.
-
 	.formGroup elements should fill the width of their container, and be inline-block.
-
 	The labels inside of .formGroup should be on their own line above form options, fill the width of their container, and have top/bottom padding.
-
 	Radio buttons and checkbox options should each be on their own line, and indented a little. 
-
 	Radio buttons and checkbox labels should be directly to the right of their corresponding inputs, and the text should vertically align with the inputs. 
-
 	Text inputs, submit buttons, and select boxes should all be at least 48px tall. The should have 14px of padding around their text. 
-
 	Textareas should be at least 100px tall.
-
 	Text inputs, select boxes, and textareas should have a 1px border that's #CCC, and none of the default shadows.
-
 	The submit button should float to the right, be bolded, and only be as wide as the text makes it.
-
-	The submit button should be rga(39, 208, 127), but only 50% opacity. On hover, it should be 100% opacity.
-	
-	
+	The submit button should be rga(39, 208, 127), but only 50% opacity. On hover, it should be 100% opacity.	
 */
 
+form {
+	max-width: 500px;
+	background-color: #E3E6EC;
+	align-content: center;
+}
 
+.row {
+	margin: 10px;
+}
+
+.formGroup {
+	width: 100%;
+	display: inline-block;
+}
+
+.formGroup label {
+	width: 100%;
+	padding: 10px 0;
+	clear: both;
+}
+
+.radioButtons {
+	clear: both;
+	margin-left: 10px;
+
+}
+
+.radioButtons label {
+	float: right;
+	vertical-align: sub;
+}
+
+.checkBoxes {
+	clear: both;
+	margin-left: 10px;
+}
+
+.checkBoxes label {
+	float: right;
+	vertical-align: sub;
+}
+
+input {
+	height: 48px;
+	padding: 14px;
+	border: 1px solid #CCC;
+	box-shadow: none;
+}
+
+select {
+	height: 48px;
+	padding: 14px;
+	border: 1px solid #CCC;
+	box-shadow: none;
+}
+
+textarea {
+	height: 100px;
+	border: 1px solid #CCC;
+	box-shadow: none;
+}
+
+input[type = "submit"] {
+	float: right;
+	font-weight: 800;
+	background-color: rgba(39, 208, 127, .5);
+}
+
+input[type = "submit"]:hover {
+	opacity: 1;
+}
 /*-------- Results Styles --------*/
 
 
